@@ -50,7 +50,7 @@ h1, h2 {
 }
 
 h1 {
-    color: var(--dark-raspberry);
+    color: black;
     font-size: 2.8rem;
 }
 
@@ -69,6 +69,7 @@ h2 {
 
 ul {
     padding-left: 1.25rem;
+    margin-left: 1rem;
 }
 
 ul li::marker {
@@ -78,12 +79,7 @@ ul li::marker {
 
 ul li {
     margin-bottom: .5rem;
-}
-
-ul li span {
-    color: var(--Wenge-Brown);
-    margin-left: 1rem;
-    font-weight: 700;
+    padding-left: 1.25rem;
 }
 
 hr {
@@ -138,24 +134,22 @@ hr {
     margin-bottom: .5rem;
 }
 
-.ingredients li span{
-    font-weight: initial;
+ol {
+    padding-left: 1rem;
 }
 
-.instructions .item {
-    padding-left: .5rem;
+ol li {
+    padding-left: 1rem;
     margin-bottom: .5rem;
-    display: flex;
 }
 
-.instructions .item .num {
+ol li strong {
+    padding-right: .25rem;
+}
+
+ol li::marker {
     color: var(--nutmeg);
-    margin-right: 1rem;
-    font-weight: 700;
-}
-
-.instructions .item p span {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .nutrition-step .values {
@@ -168,7 +162,7 @@ hr {
     border-bottom: 1px solid var(--Light-Grey);
 }
 
-.nutrition-table .item p:nth-last-child(2) {
+.nutrition-table .item p:nth-last-child(1) {
     color: var(--nutmeg);
     font-weight: 700;
 }
